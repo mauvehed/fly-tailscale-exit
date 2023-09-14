@@ -1,13 +1,11 @@
-app = "tailwings"
+# fly.toml file generated for mvh-ts-exit on 2023-02-21T08:20:29-06:00
 
+app = "mvh-ts-exit"
 kill_signal = "SIGINT"
 kill_timeout = 5
 
 [env]
-  PORT="41641"
-# create a reusable or ephemeral auth key
-# ephemeral auth key are not working for use as exit node as they are ipv6 only
-# flyctl secrets set TAILSCALE_AUTH_KEY=tskey-...
+  PORT = "41641"
 
 [experimental]
   auto_rollback = false
